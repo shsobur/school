@@ -146,6 +146,11 @@ nav button:active {
     max-width: 640px;
   }
 
+  nav{
+    padding: 20px 10px;
+    border-bottom: 2px solid #FEA301;
+  }
+
   #navbar_mobile_memu_icon {
     display: block;
     font-size: 1.2rem;
