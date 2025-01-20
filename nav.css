@@ -1,20 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", serif;
-}
-
-body {
-  max-width: 1536px;
-  margin: auto;
-  padding: 10px;
-}
-
-/* Navbar styleing ST__ */
-
 nav {
   padding: 20px 0;
   display: flex;
@@ -88,8 +71,6 @@ nav button:active {
   background-color: #ec9705;
 }
 
-/* Navbar styleing END__ */
-
 /* Responsive styleing__ST */
 
 @media screen and (max-width: 1536px) {
@@ -146,9 +127,9 @@ nav button:active {
     max-width: 640px;
   }
 
-  nav{
+  nav {
     padding: 20px 10px;
-    border-bottom: 2px solid #FEA301;
+    border-bottom: 2px solid #fea301;
   }
 
   #navbar_mobile_memu_icon {
