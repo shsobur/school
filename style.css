@@ -7,11 +7,15 @@
   font-family: "Quicksand", serif;
 }
 
+body {
+  max-width: 1536px;
+  margin: auto;
+  padding: 10px;
+}
+
 /* Navbar styleing ST__ */
 
 nav {
-  max-width: 1536px;
-  margin: auto;
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -61,6 +65,10 @@ nav {
   color: #5d58ef;
 }
 
+#navbar_mobile_memu_icon {
+  display: none;
+}
+
 nav button {
   color: #ffffff;
   padding: 10px 50px;
@@ -81,3 +89,86 @@ nav button:active {
 }
 
 /* Navbar styleing END__ */
+
+/* Responsive styleing__ST */
+
+@media screen and (max-width: 1536px) {
+  body {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    max-width: 1024px;
+  }
+
+  .navbar_logo_container img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar_logo_container h1 {
+    font-size: 1.8rem;
+  }
+
+  nav button {
+    padding: 8px 45px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 768px;
+  }
+
+  .navbar_logo_container img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .navbar_page_route_container {
+    gap: 20px;
+  }
+
+  .navbar_page_route_container li {
+    font-size: 1.1rem;
+  }
+
+  nav button {
+    font-size: 1.1rem;
+    padding: 8px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 640px;
+  }
+
+  #navbar_mobile_memu_icon {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .navbar_page_route_container {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    max-width: 475px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  body {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
