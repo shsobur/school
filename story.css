@@ -79,7 +79,7 @@
   font-size: 1.2rem;
 }
 
-#story_card_date_2 {
+.story_left_date_container {
   color: #ffffff;
   padding: 5px 20px;
   display: inline-block;
@@ -89,45 +89,21 @@
   position: absolute;
   top: 190px;
   left: 30px;
+}
+
+#story_card_date_2 {
   background-color: #95b226;
 }
 
 #story_card_date_3 {
-  color: #ffffff;
-  padding: 5px 20px;
-  display: inline-block;
-  border-radius: 32px;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  top: 190px;
-  left: 30px;
   background-color: #5d58f0;
 }
 
 #story_card_date_4 {
-  color: #ffffff;
-  padding: 5px 20px;
-  display: inline-block;
-  border-radius: 32px;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  top: 190px;
-  left: 30px;
   background-color: #95b226;
 }
 
 #story_card_date_5 {
-  color: #ffffff;
-  padding: 5px 20px;
-  display: inline-block;
-  border-radius: 32px;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  top: 190px;
-  left: 30px;
   background-color: #95b226;
 }
 
@@ -151,4 +127,198 @@
 
 .story_section_btn_container button:hover {
   background-color: #292828;
+}
+
+/* Responsive styleing__ */
+
+@media screen and (max-width: 1536px) {
+  .story_left_card h2 {
+    font-size: 1.5rem;
+    padding: 50px 20px 30px 20px;
+  }
+
+  #story_card_date_1 {
+    top: 335px;
+  }
+
+  .story_right_cards h2 {
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+
+  .story_left_date_container {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .story_main_container {
+    padding: 0 50px 80px 50px;
+  }
+
+  .story_main_container h1 {
+    padding: 80px 0;
+    font-size: 3rem;
+  }
+
+  .story_left_card h2 {
+    padding: 50px 20px 20px 20px;
+  }
+
+  #story_card_date_1 {
+    top: 250px;
+  }
+
+  .story_right_cards h2 {
+    font-size: 1.1rem;
+  }
+
+  .story_left_date_container {
+    left: 20px;
+    top: 110px;
+    padding: 3px 15px;
+  }
+
+  .story_section_btn_container button {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .story_main_container {
+    padding: 0 20px 60px 20px;
+  }
+
+  .story_main_container h1 {
+    padding: 60px 0;
+    font-size: 2.8rem;
+  }
+
+  .story_cards_main_container {
+    gap: 20px;
+  }
+
+  .story_left_card h2 {
+    font-size: 1.2rem;
+    padding: 40px 10px 20px 10px;
+  }
+
+  .story_left_card p {
+    padding: 0 10px 40px 10px;
+  }
+
+  #story_card_date_1 {
+    top: 200px;
+  }
+
+  .story_right_cards_container {
+    gap: 20px;
+  }
+
+  .story_right_cards h2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .story_left_date_container {
+    left: 10px;
+    top: 85px;
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  .story_section_btn_container button {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .story_main_container {
+    padding: 0 30px 60px 30px;
+  }
+
+  .story_main_container h1 {
+    padding: 60px 0;
+    font-size: 2.6rem;
+  }
+
+  .story_cards_main_container {
+    flex-direction: column;
+  }
+
+  .story_left_cards_container {
+    width: 100%;
+  }
+
+  .story_right_cards_container {
+    width: 100%;
+  }
+
+  .story_left_card h2 {
+    font-size: 1.5rem;
+  }
+
+  .story_right_cards h2 {
+    font-size: 18px;
+  }
+
+  #story_card_date_1 {
+    top: 330px;
+  }
+
+  .story_left_date_container {
+    left: 20px;
+    top: 150px;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #story_card_date_1 {
+    left: 10px;
+    font-size: 14px;
+    padding: 3px 10px;
+    top: 190px;
+  }
+
+  .story_left_card h2 {
+    font-size: 1.3rem;
+    padding-top: 60px;
+  }
+
+  .story_right_cards_container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .story_left_date_container {
+    padding: 3px 10px;
+    font-size: 14px;
+    left: 10px;
+    top: 180px;
+  }
+
+  .story_right_cards h2 {
+    padding: 30px 0;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .story_main_container h1 {
+    padding: 40px 0;
+    font-size: 2.4rem;
+  }
+
+  #story_card_date_1 {
+    top: 150px;
+  }
+
+  .story_left_date_container {
+    top: 120px;
+  }
 }
