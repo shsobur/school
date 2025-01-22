@@ -144,6 +144,10 @@ nav button:active {
   nav button {
     display: none;
   }
+
+  .navbar_logo_container h1 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {

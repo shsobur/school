@@ -189,6 +189,10 @@
   .curriculum_cards p {
     font-size: 16px;
   }
+
+  .curriculum_card_slide_btn_container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 475px) {
